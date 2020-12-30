@@ -1,5 +1,6 @@
 const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
+const container = document.querySelector('.button-container')
 
 // Prompt to select media stream, pass to video element, then play
 async function selectMediaStream() {
@@ -10,7 +11,7 @@ async function selectMediaStream() {
             videoElement.play();
         }
     } catch (error) {
-        console,log('whoops, error here:', error);
+        console.log('Oops, something went wrong', error);
     }
 }
 
